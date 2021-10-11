@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Scrutor" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eVendingMachine.Commands\eVendingMachine.Commands.csproj" />
+    <ProjectReference Include="..\eVendingMachine.Data.EF.Migrations\eVendingMachine.Data.EF.Migrations.csproj" />
+    <ProjectReference Include="..\eVendingMachine.Data.EF\eVendingMachine.Data.EF.csproj" />
+    <ProjectReference Include="..\eVendingMachine.Domain.Service\eVendingMachine.Domain.Service.csproj" />
+    <ProjectReference Include="..\eVendingMachine.Queries\eVendingMachine.Queries.csproj" />
+  </ItemGroup>
+
+</Project>
