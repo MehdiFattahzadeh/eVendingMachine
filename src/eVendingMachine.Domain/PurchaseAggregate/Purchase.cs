@@ -9,11 +9,9 @@ namespace eVendingMachine.Domain
     {
         public Purchase()
         {
-            //CashesIO = new List<CashIO>();
             State = PurchaseState.New;
             DateTime = DateTime.Now;
         }
-        //public ICollection<CashIO> CashesIO { get; private set; }
         public Product Product { get; private set; }
         public Guid? ProductId { get; private set; }
         public DateTime DateTime { get; private set; }
@@ -22,7 +20,7 @@ namespace eVendingMachine.Domain
         public decimal TotalOutCash { get; private set; }
         public void InsertCash(Cash cash)
         {
-            if (!new IsWalletHasSpace().IsSatisfiedBy(this)) throw new Exception();
+            if (!new IsWalletHasSpace().IsSatisfiedBy(this)) throw new DomainException("Wallet Cannot Store Cashs");
             if (cash == null) throw new ArgumentNullException(nameof(cash));
 
             TotalInCash += cash.Price;
@@ -39,7 +37,7 @@ namespace eVendingMachine.Domain
 
         public void Cancel()
         {
-            if (!new CanChangeToCancelState().IsSatisfiedBy(this)) throw new Exception();
+            if (!new CanChangeToCancelState().IsSatisfiedBy(this)) throw new DomainException("Purchase Cannot be Cancel"); 
             State = PurchaseState.Canceled;
         }
 

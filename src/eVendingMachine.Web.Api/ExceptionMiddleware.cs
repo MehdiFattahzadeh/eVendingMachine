@@ -50,7 +50,7 @@ namespace eVendingMachine.Web.Api
             await context.Response.WriteAsync(new
             {
                 StatusCode = context.Response.StatusCode,
-                Message = "Internal Server Error from the custom middleware."
+                Message = "Internal Server Error "
             }.ToString());
         }
     }
