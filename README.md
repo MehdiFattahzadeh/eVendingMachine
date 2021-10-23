@@ -1,1 +1,1 @@
-# eVendingMachine
+# Virtual Vending Machine
