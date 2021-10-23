@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\eVendingMachine.Domain.Service\eVendingMachine.Domain.Service.csproj" />
+    <ProjectReference Include="..\..\src\eVendingMachine.Domain.Service\eVendingMachine.Domain.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -17,11 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\eVendingMachine.Commands\eVendingMachine.Commands.csproj" />
-    <ProjectReference Include="..\eVendingMachine.Common.Tools\eVendingMachine.Common.Tools.csproj" />
-    <ProjectReference Include="..\eVendingMachine.Domain\eVendingMachine.Domain.csproj" />
-    <ProjectReference Include="..\eVendingMachine.Dto\eVendingMachine.Dto.csproj" />
-    <ProjectReference Include="..\eVendingMachine.Web.Api\eVendingMachine.Web.Api.csproj" />
+    <ProjectReference Include="..\..\src\eVendingMachine.Commands\eVendingMachine.Commands.csproj" />
+    <ProjectReference Include="..\..\src\eVendingMachine.Common.Tools\eVendingMachine.Common.Tools.csproj" />
+    <ProjectReference Include="..\..\src\eVendingMachine.Web.Api\eVendingMachine.Web.Api.csproj" />
   </ItemGroup>
 
 </Project>
